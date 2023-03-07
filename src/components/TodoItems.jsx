@@ -1,12 +1,15 @@
 import React from "react";
 
-function TodoItem() {
+// TodoBoard -> Todoitems 
+function TodoItem(props) {
   return (
     <>
-      <div className="todo_item">study</div>
+    {/* props.item => TodoBoard 에서 item 으로 전달했기 때문. */}
+      <div className="todo_item">{props.item}</div>
     </>
   );
 }
 
 // TodoBoard 로 수출할게
 export default TodoItem;
+ 
